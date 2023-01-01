@@ -8,8 +8,8 @@ def main():
     parser = argparse.ArgumentParser(prog='auto send mail script', description='Send mail to receivers with same content.')
 
     parser.add_argument('-s', '--subject', help='mail subject', required=True)
-    parser.add_argument('-c', '--content', help='mail content, must be in html format. You can add image but only with image tag, view the same in sample.html', required=True)
-    parser.add_argument('-r', '--receiver', help='mail receiver, txt file. Separate with end line.', required=True)
+    parser.add_argument('-c', '--content', help='mail content, must be in html format. You can add image but only with image tag. View sample.html', required=True)
+    parser.add_argument('-r', '--receiver', help='mail receiver, txt file. Separate with end line. View sample.txt', required=True)
     parser.add_argument('-a', '--account', help='sender account. Beware if you want to send mail to education organization, you must use an email inside that organization.', required=True)
     parser.add_argument('-p', '--password', help='sender password. This password can be retrieve by follow this instruction: https://support.google.com/mail/answer/185833?hl=en', required=True)
     parser.add_argument('-t', '--time', help='time between 2 mail sending, default is 2 sec', default=2, type=int)
