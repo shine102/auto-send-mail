@@ -53,7 +53,7 @@ def _send_mail(server, sender, receiver, subject, content, time):
     except Exception as e:
         print(e)
         sleep(180)
-        server = login(sender, password)
+        server = _login(sender, password)
         server.sendmail(sender, receiver, msg.as_string())
     sleep(time)
 
